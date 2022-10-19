@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f7f9;
+}
+
+.box {
+  margin-top: 30px;
+}
+
+.logo {
+  margin-top: 50px;
+  margin-left: 560px;
+}
+
+.card {
+  background-color: #495567;
+  width: 50%;
+  /* height: 100%; */
+  height: 438px;
+  margin-left: 25px;
+  padding: 40px;
+}
+
+.bill {
+  /* background-color: aqua; */
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-color: #d5dbe5;
+}
+.wrapper {
+  width: 50%;
+}
+
+.bill-input ,.bill-input-number {
+  width: 100%;
+  /* border: #7f8da2; */
+  border: none;
+  background-color: #d5dbe5;
+  margin-left: 10px;
+}
+
+
+
+
+.bill-input:active {
+  border: none;
+}
+
+.button,
+.custom_tip {
+  width: 25%;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 5px;
+  border: none;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-color: #495567;
+  color: #eaedf1;
+  font-weight: 700;
+}
+
+.custom_tip {
+  background-color: #d5dbe5;
+  color: black;
+  
+  
+
+}
+
+
+::placeholder {
+  color: #707f9a;
+}
+
+
+.tip_person{
+    margin-top: 20px;
+}
+
+
+.tip{
+    color: white;
+}
+
+.person{
+  color: #9ba8c1;
+}
+.tp,.tP{
+    color: white;
+}
+
+.total_person{
+    margin-top: 70px;
+}
+
+.reset{
+    margin-top: 100px;
+    padding: 8px;
+    font-size:20px;
+    font-weight: 700;
+    color: #9ba8c1;
+    border: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.dollar{
+    margin-left: 8px;
+}

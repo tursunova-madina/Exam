@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bs -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./styles/stylesheet.css">
+    <title>Tip Calculator App</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <img src="./images/logo.svg" alt="logo" class="logo">
+        <div class="rounded d-flex align-items-center justify-content-between box shadow-lg mx-auto  w-75 p-5">
+            <div class="wrapper">
+                <h3>Bill</h3>
+                <div class=" mt-3 bill d-flex align-items-center">
+                    <img src="./images/icon-dollar.svg" alt="dollar" class="dollar">
+                    <input class="bill-input" type="text" placeholder=>
+                </div>
+
+                <h3 class="mt-3">Select Tip &</h3>
+                <div class="btns">
+                    <button class="button 5per" value="5">5 %</button>
+                    <button class="button 10per" value="10">10 %</button>
+                    <button class="button 15per" value="15">15 %</button>
+                    <button class="button 25per" value="25">25 %</button>
+                    <button class="button 50per" value="50">50 %</button>
+                    <input class="custom_tip" type="text" placeholder="Custom">
+                </div>
+
+                <h3 class="mt-5">Number of People</h3>
+                <div class=" mt-3 bill d-flex align-items-center">
+                    <img src="./images/icon-person.svg" alt="dollar" class="dollar">
+                    <input class="bill-input-number" type="text" placeholder=>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="tip_person d-flex align-items-center justify-content-between">
+                    <h4><span class="tip">Tip Amount</span> <br> <span class="person"> <small> / person</small> </span>
+                    </h4>
+
+                    <h1 class="tP"> $ </h1>
+                </div>
+                <div class="total_person d-flex align-items-center justify-content-between">
+                    <h4><span class="tip">Total</span> <br> <span class="person"> <small> / person</small> </span>
+                    </h4>
+                    <h1 class="tp"> $ </h1>
+                </div>
+
+                <button class="reset">RESET</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+<script src="./js/problems.js"></script>
+<script src="./js/app.js"></script>
+
+</html>
