@@ -14,39 +14,41 @@ for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", () => {
     let billInputValue = Number(billInput.value);
     let personTotalValue = Number(personTotal.value);
-    if (personTotalValue==0 && personTotalValue<0) {
-      confirm("It can not be calculated");
+    if (personTotalValue==  0 || personTotalValue < 0) {
+     alert("We can not calculate it!")
     } else {
-      let tipResult = (billInputValue * (btnValue / 100))/ personTotalValue;
+      let tipResult = (billInputValue * (btnValue / 100)) / personTotalValue;
       tip.textContent = ` $ ${tipResult.toFixed(2)}`;
-      console.log(tipResult);
-      console.log(billInputValue);
+      // console.log(tipResult);
+      // console.log(billInputValue);
 
-      let totalPeople=((billInputValue*(btnValue/100))+billInputValue)/personTotalValue;
-      totalBill.textContent=` $ ${totalPeople.toFixed(2)}`
+      let totalPeople =
+        (billInputValue * (btnValue / 100) + billInputValue) / personTotalValue;
+      totalBill.textContent = ` $ ${totalPeople.toFixed(2)}`;
+
+
     }
   });
 }
 
-custom.addEventListener("change",()=>{
+custom.addEventListener("change", () => {
   let customValue = Number(custom.value);
   let billInputValue = Number(billInput.value);
   let personTotalValue = Number(personTotal.value);
-  let tipResult = (billInputValue *(customValue / 100))/ personTotalValue;
+  let tipResult = (billInputValue * (customValue / 100)) / personTotalValue;
   tip.textContent = ` $ ${tipResult.toFixed(2)}`;
   console.log(tipResult);
   console.log(billInputValue);
 
-  let totalPeople=((billInputValue*(customValue/100))+billInputValue)/personTotalValue;
-  totalBill.textContent=` $ ${totalPeople.toFixed(2)}`
-  
-})
+  let totalPeople =
+    (billInputValue * (customValue / 100) + billInputValue) / personTotalValue;
+  totalBill.textContent = ` $ ${totalPeople.toFixed(2)}`;
+});
 
-
-resetBtn.addEventListener("click",()=>{
-  tip.textContent="000";
-  totalBill.textContent="000";
-  billInput.value='';
-  personTotal.value='';
-  custom.value='';
-})
+resetBtn.addEventListener("click", () => {
+  tip.textContent = "000";
+  totalBill.textContent = "000";
+  billInput.value = "";
+  personTotal.value = "";
+  custom.value = "";
+});
